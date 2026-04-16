@@ -1,4 +1,4 @@
-# Volta ao Mundo - Chile 🇨🇱
+# Volta ao Mundo - Chile 🌄
 
 Projeto acadêmico desenvolvido com HTML, CSS, Bootstrap e JavaScript.
 
