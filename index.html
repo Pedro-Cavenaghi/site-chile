@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,70 +29,144 @@
     </nav>
 </header>
 
-<section class="hero"></section>
-
-<!-- secao sobre chile -->
-<section class="container my-5 secao-sobre">
-  <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="6000">
-
-    <div class="carousel-indicators">
-  <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active"></button>
-  <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1"></button>
-
-</div>
-    <div class="carousel-inner">
-
-      <!-- slide 1 -->
-      <div class="carousel-item active">
-        <div class="row align-items-center">
-
-          <div class="col-md-6 text-light">
-            <h2 class="fw-bold">Turismo no Chile</h2>
-            <p class="fw-bold">The readable content off a page when looking layout using <br>
-                Lorem Ipsum is that it has.</p>
-            <p>It is a long established fact that a reader will be distracted if the readable <br>
-                content off a page when looking at its layout using Lorem Ipsum is that it has. <br>
-                It is a long established fact that a reader will be distracted the readable content <br>
-                off a page when looking at its layout using Lorem Ipsum is that it has.
-            </p>
-            <a href="pages/turismo.html" class="btn btn-danger">Saiba mais</a>
-          </div>
-
-          <div class="col-md-6">
-            <img src="assets/img/home/torres-del-paine.jpg" class="img-fluid img-caroussel">
-          </div>
-        </div>
-      </div>
-
-      <!-- slide 2 -->
-      <div class="carousel-item">
-        <div class="row align-items-center">
-
-          <div class="col-md-6 text-light">
-            <h2 class="fw-bold">Cultura Chilena</h2>
-            <p class="fw-bold">The readable content off a page when looking layout using <br>
-                Lorem Ipsum is that it has.</p>
-                <p>It is a long established fact that a reader will be distracted if the readable <br>
-                content off a page when looking at its layout using Lorem Ipsum is that it has. <br>
-                It is a long established fact that a reader will be distracted the readable content <br>
-                off a page when looking at its layout using Lorem Ipsum is that it has. <br>
-                
+<main>
+<section class="hero-home d-flex align-items-center text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-8 mx-auto text-light">
+                <h1 class="fw-bold display-4">Descubra o Chile</h1>
+                <p class="lead">
+                    De desertos surreais a montanhas imponentes, explore paisagens únicas em cada canto do país.
                 </p>
-
-            <a href="pages/cultura.html" class="btn btn-danger">Saiba mais</a>
-          </div>
-
-          <div class="col-md-6">
-            <img src="assets/img/home/torres-del-paine.jpg" class="img-fluid img-caroussel">
-          </div>
-
+            </div>
         </div>
-      </div>
+    </div>
+</section>
 
+<!-- carrossel -->
+ <section>
+    <div class="container py-5">
+<div id="carouselExampleIndicators" class="carousel slide mx-auto" style="max-width: 900px;">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="assets/img/home/carrossel-cultura.png" class="d-block w-100" alt="...">
+      <div class="carousel-content">
+      <h2>Explore sua cultura</h2>
+      <a href="pages/cultura.html" class="btn btn-primary botao-carousel">
+            Explorar
+        </a>
+      </div>
     </div>
 
+    <div class="carousel-item">
+      <img src="assets/img/home/carrossel-gastronomia.png" class="d-block w-100" alt="...">
+      <div class="carousel-content">
+      <h2>Explore sua gastronomia</h2>
+      <a href="pages/gastronomia.html" class="btn btn-primary botao-carousel">
+            Explorar
+        </a>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="assets/img/home/carrossel-historia.png" class="d-block w-100" alt="...">
+      <div class="carousel-content">
+      <h2>Explore sua história</h2>
+      <a href="pages/historiaGeo.html" class="btn btn-primary botao-carousel">
+            Explorar
+        </a>
+      </div>
+    </div>
+    
   </div>
-    </section>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+</section>
+
+<!-- galeria -->
+   <section class="section">
+    
+
+    <div class="container py-5 text-center">
+<h4 class="text-center text-light fw-bold mb-4">
+            <i class="bi bi-images me-2"></i>Galeria de viagem
+        </h4>
+        
+        <div class="box-container">
+
+            <div class="box">
+                <div class="inner">
+                    <a href="assets/img/home/vulcao-vilarrica-hd.png" class="glightbox">
+                        <img src="assets/img/home/vulcao-vilarrica-hd.png" alt="Vulcão Vilarrica">
+                        <span class="titulo">Vulcão Villarrica</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="inner">
+                    <a href="assets/img/home/valparaiso-hd.png" class="glightbox">
+                        <img src="assets/img/home/valparaiso-hd.png" alt="Cidade Valparaiso">
+                        <span class="titulo">Cidade Valparaiso</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="inner">
+                    <a href="assets/img/home/ilha-pascoa-hd.png" class="glightbox">
+                        <img src="assets/img/home/ilha-pascoa-hd.png" alt="Ilha de Páscoa">
+                        <span class="titulo">Ilha de Páscoa</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="inner">
+                    <a href="assets/img/home/lago-general-hd.png" class="glightbox">
+                        <img src="assets/img/home/lago-general-hd.png" alt="Vulcão Vilarrica">
+                        <span class="titulo">Lago General Carrera</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="inner">
+                    <a href="assets/img/home/torres-del-paine-hd.png" class="glightbox">
+                        <img src="assets/img/home/torres-del-paine-hd.png" alt="Vulcão Vilarrica">
+                        <span class="titulo">Torres del Paine</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="inner">
+                    <a href="assets/img/home/deserto-atacama-hd.png" class="glightbox">
+                        <img src="assets/img/home/deserto-atacama-hd.png" alt="Vulcão Vilarrica">
+                        <span class="titulo">Deserto do Atacama</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+</main>
 
     <footer class="bg-dark text-light py-4">
         <div class="container px-4">
@@ -105,11 +179,11 @@
                 <div class="col pt-3">
                     <h4 class="fw-bold">Menu</h4>
                     <ul class="list-unstyled">
-                        <li><a href="#" class="text-decoration-none text-light">Home</a></li>
-                        <li><a href="#" class="text-decoration-none text-light">Turismo</a></li>
-                        <li><a href="#" class="text-decoration-none text-light">Cultura</a></li>
-                        <li><a href="#" class="text-decoration-none text-light">Gastronomia</a></li>
-                        <li><a href="#" class="text-decoration-none text-light">História & Geo</a></li>
+                        <li><a href="index.html" class="text-decoration-none text-light">Home</a></li>
+                        <li><a href="pages/turismo.html" class="text-decoration-none text-light">Turismo</a></li>
+                        <li><a href="pages/cultura.html" class="text-decoration-none text-light">Cultura</a></li>
+                        <li><a href="pages/gastronomia.html" class="text-decoration-none text-light">Gastronomia</a></li>
+                        <li><a href="pages/historiaGeo.html" class="text-decoration-none text-light">História & Geo</a></li>
                     </ul>
                 </div>
                 <div class="col pt-3">
@@ -119,13 +193,12 @@
                         <li><a href="pages/creditos.html" class="text-decoration-none text-light">Créditos</a></li>
                     </ul>
                 </div>
-                <div class="col-6 col-lg-3 pt-3 text-lg-end">
+                <div class="col-6 col-lg-3 pt-3">
                     <h4 class="fw-bold">Redes sociais</h4>
                     <div>
-                        <a href="#" class="text-decoration-none text-light"><i class="bi bi-instagram fs-3 me-2"></i></a>
-                        <a href="#" class="text-decoration-none text-light"><i class="bi bi-linkedin fs-3 me-2"></i></a>
-                        <a href="#" class="text-decoration-none text-light"><i class="bi bi-envelope-fill fs-3 me-2"></i></a>
-                        <a href="#" class="text-decoration-none text-light"><i class="bi bi-github fs-3 me-2"></i></a>
+                        <a href="https://www.instagram.com/pedro._.cavenaghi?igsh=MXR6azU0MGVmenJ0bg==" class="text-light"><i class="bi bi-instagram fs-3 me-2"></i></a>
+                        <a href="https://www.linkedin.com/in/pedro-cavenaghi?utm_source=share_via&utm_content=profile&utm_medium=member_android" class="text-decoration-none text-light"><i class="bi bi-linkedin fs-3 me-2"></i></a>
+                        <a href="https://github.com/Pedro-Cavenaghi" class="text-decoration-none text-light"><i class="bi bi-github fs-3 me-2"></i></a>
                     </div>
                 </div>
             </div>
@@ -141,7 +214,7 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-
+    
     <script src="js/jsmain.js"></script>
 </body>
 </html>

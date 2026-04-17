@@ -5,21 +5,37 @@
     list-style: none;
 }
 
+html {
+    height: 100%;
+}
+
  body {
+    margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    height: 100%;
     overflow-x: hidden;
-    background: linear-gradient(to bottom, #001649, #000414) !important;
+    background-color: #001a33;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
     position: absolute;
     width: 100%;
+    z-index: 10;
+}
+
+main {
+    flex: 1;
 }
 
 .hero {
     height: 100vh;
     width: 100%;
-    background-image: url(../assets/img/home/torres-del-paine.jpg);
+    background-image: url(../assets/img/home/torres-del-paine-edit.JPG);
     background-size: cover;
     background-position: center center;
     display: flex;
@@ -58,7 +74,7 @@ header {
     color: #000000;
 }
 
-.navbar a::after {
+.navbar ul a::after {
     content: "";
     position: absolute;
     left: 0;
@@ -109,19 +125,6 @@ header {
     height: 40px;
     width: auto;
 }
-    /* secao sobre*/
-.carousel-indicators [data-bs-target] {
-    background-color: #ed3c57;
-}
-
-.carousel-item {
-    min-height: 500px;
-}
-
-.img-caroussel {
-    
-    clip-path: circle(34%);
-}
 
 @media screen and (max-width: 995px) {
     .navbar .logo img{
@@ -171,4 +174,278 @@ header {
         font-size: 1.2em;
     }
     
+}
+
+    /* carrossel */
+.carousel-indicators [data-bs-target] {
+    background-color: #ed3c57;
+}
+
+.carousel-item img {
+    object-position: center;
+    border-radius: 12px;
+}
+
+.carousel-img-container {
+    position: relative;
+}
+
+.carousel-img-container img {
+    display: block;
+    width: 100%;
+}
+
+/* mobile */
+@media (max-width: 768px) {
+    .carousel-content {
+        left: 15px;
+        bottom: 15px;
+    }
+
+    .carousel-content h2 {
+        font-size: 1.2rem;
+    }
+}
+
+.carousel-banner img {
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.carousel-banner {
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+}
+
+/* conteúdo flexível */
+
+.carousel-content {
+    position: absolute;
+    bottom: 25px;
+    left: 30px;
+    right: 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color: white;
+
+    z-index: 2;
+    
+}
+
+.botao-carousel {
+    background: #ff2d4c;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+.botao-carousel:hover {
+    background: #770012;
+}
+
+/* galeria */
+.box-container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 15px; /* lateral */
+    row-gap: 30px;    /* vertical */
+}
+
+@media (max-width: 768px) {
+    .box-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .box-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.inner {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+/* imagem */
+.inner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.4s;
+}
+
+/* overlay escuro */
+.inner::after {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+    opacity: 0;
+    transition: 0.3s;
+}
+
+/* título */
+.titulo {
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: 0.3s;
+}
+
+/* hover */
+.box:hover img {
+    transform: scale(1.08);
+    filter: brightness(0.7);
+}
+
+.box:hover .inner::after {
+    opacity: 1;
+}
+
+.box:hover .titulo {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.hero-turismo {
+    height: 80vh;
+    background: url('../assets/img/home/pedras-chile.jpg') center/cover no-repeat;
+    position: relative;
+}
+
+/* overlay escuro */
+.hero-turismo::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+/* garante que o conteúdo fique acima */
+.hero-turismo .container {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-historia {
+    height: 80vh;
+    background: url('../assets/img/home/carrossel-historia.png') center/cover no-repeat;
+    position: relative;
+}
+
+/* overlay escuro */
+.hero-historia::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+/* garante que o conteúdo fique acima */
+.hero-historia .container {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-gastronomia {
+    height: 80vh;
+    background: url('../assets/img/home/chile-gastronomia-hero2.webp') center/cover no-repeat;
+    position: relative;
+}
+
+/* overlay escuro */
+.hero-gastronomia::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+/* garante que o conteúdo fique acima */
+.hero-gastronomia .container {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-cultura {
+    height: 80vh;
+    background: url('../assets/img/home/chile-cultura.jpg') center/cover no-repeat;
+    position: relative;
+}
+
+/* overlay escuro */
+.hero-cultura::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+/* garante que o conteúdo fique acima */
+.hero-cultura .container {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-home {
+    height: 80vh;
+    background: url('../assets/img/home/torres-del-paine.jpg') center/cover no-repeat;
+    position: relative;
+}
+
+/* overlay escuro */
+.hero-home::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+/* garante que o conteúdo fique acima */
+.hero-home .container {
+    position: relative;
+    z-index: 2;
+}
+
+.nav-pills .nav-link {
+    color: white;
+    margin-bottom: 10px;
+    background: #1c1c1c;
+}
+
+.nav-pills .nav-link.active {
+    background: #ff2d4c;
+}
+
+.nav-pills .nav-link:hover {
+    background: #333;
+}
+
+.gastronomia-section {
+    background: #121826;
+}
+
+.tab-pane img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
 }
