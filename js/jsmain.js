@@ -9,9 +9,9 @@ document.addEventListener("DOMContentLoaded", () => {
             document.body.classList.toggle('nao-scroll')
             
             if (navLinks.classList.contains('mobile-menu')) {
-                menuHamburguer.src = "/assets/icons/cruz-fechar.png"
+                menuHamburguer.src = "assets/icons/cruz-fechar.png"
             } else {
-                menuHamburguer.src = "/assets/icons/menu-aberto.png"
+                menuHamburguer.src = "assets/icons/menu-aberto.png"
             }
         })
     }
