@@ -1,3 +1,7 @@
+const BASE_PATH = window.location.pathname.includes("/pages/")
+  ? "../"
+  : "";
+
 document.addEventListener("DOMContentLoaded", () => {
     const menuHamburguer = document.querySelector(".menu-hamburguer")
     const navLinks = document.querySelector(".nav-links")
@@ -9,12 +13,11 @@ document.addEventListener("DOMContentLoaded", () => {
             document.body.classList.toggle('nao-scroll')
             
             if (navLinks.classList.contains('mobile-menu')) {
-                menuHamburguer.src = "/site-chile/assets/icons/cruz-fechar.png"
+                menuHamburguer.src = BASE_PATH + "assets/icons/cruz-fechar.png"
             } else {
-                menuHamburguer.src = "/site-chile/assets/icons/menu-aberto.png"
+                menuHamburguer.src = BASE_PATH + "assets/icons/menu-aberto.png"
             }
         })
     }
 })
-
 const lightbox = GLightbox();
