@@ -237,15 +237,30 @@ main {
     
 }
 
+.carousel-overlay {
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.85), /* forte embaixo */
+        rgba(0, 0, 0, 0.4),  /* meio */
+        rgba(0, 0, 0, 0)     /* transparente em cima */
+    );
+
+    z-index: 1;
+    pointer-events: none; /* 🔥 importante */
+}
+
 .botao-carousel {
     background: #ff2d4c;
     border: none;
-    padding: 10px 20px;
+    padding: 8px 18px;
     font-weight: bold;
 }
 
 .botao-carousel:hover {
-    background: #770012;
+    background: #6c0010;
 }
 
 /* galeria */
@@ -388,4 +403,18 @@ main {
     height: 300px;
     object-fit: cover;
     border-radius: 10px;
+}
+
+.section-img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.section-vimg {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 12px;
 }
