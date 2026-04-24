@@ -237,6 +237,26 @@ main {
     
 }
 
+@media (max-width: 570px) {
+    .carousel-content h2 {
+        font-size: 12px;
+        margin-bottom: 5px;
+        bottom: 20px;
+    }
+
+    .botao-carousel {
+        padding: 6px 14px;
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 490px) {
+    .botao-carousel {
+        padding: 2px 2px;
+        font-size: 10px;
+    }
+}
+
 .carousel-overlay {
     position: absolute;
     inset: 0;
