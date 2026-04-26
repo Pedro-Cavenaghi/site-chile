@@ -52,6 +52,7 @@ main {
     height: 100vh;
 }
 
+/* navbar */
 .navbar {
     
     padding: 20px 50px;
@@ -263,13 +264,13 @@ main {
 
     background: linear-gradient(
         to top,
-        rgba(0, 0, 0, 0.85), /* forte embaixo */
+        rgba(0, 0, 0, 0.85), /* preto embaixo */
         rgba(0, 0, 0, 0.4),  /* meio */
-        rgba(0, 0, 0, 0)     /* transparente em cima */
+        rgba(0, 0, 0, 0)     /* transparente cima */
     );
 
     z-index: 1;
-    pointer-events: none; /* 🔥 importante */
+    pointer-events: none;
 }
 
 .botao-carousel {
